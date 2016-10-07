@@ -7,7 +7,7 @@
     <ProjectGuid>{0203DAE7-B476-4F56-BF0C-DC09C97CAD47}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>orez.omodule</RootNamespace>
+    <RootNamespace>Orez.CmdModule</RootNamespace>
     <AssemblyName>omodule</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,12 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,13 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\Directory0.cs" />
+    <Compile Include="IO\File0.cs" />
+    <Compile Include="Part\Link.cs" />
+    <Compile Include="Part\Module.cs" />
+    <Compile Include="Net\Ajax\Json.cs" />
+    <Compile Include="Net\GitHub\Asset.cs" />
+    <Compile Include="Net\GitHub\User.cs" />
+    <Compile Include="Net\GitHub\Release.cs" />
+    <Compile Include="IO\Shell.cs" />
+    <Compile Include="Part\Source.cs" />
+    <Compile Include="Option.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text\String0.cs" />
+    <Compile Include="Zero\Command0.cs" />
+    <Compile Include="Zero\Console0.cs" />
+    <Compile Include="Zero\Link0.cs" />
+    <Compile Include="Zero\Module0.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

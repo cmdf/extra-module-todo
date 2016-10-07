@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Manage modules in Windows Console.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("0rez")]
-[assembly: AssemblyProduct("omodule")]
+[assembly: AssemblyProduct("cmd-module")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
